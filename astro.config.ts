@@ -11,7 +11,7 @@ import { spectreDark } from "./src/ec-theme";
 // https://astro.build/config
 export default defineConfig({
   site: "https://driedwater.github.io",
-  base: "/astro",
+  base: "/astro/",
   output: "static",
   integrations: [
     expressiveCode({
