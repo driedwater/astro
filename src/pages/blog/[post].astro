@@ -60,11 +60,11 @@ const { Content, headings } = await render(post);
       <h2 class="no-mt">Table of contents</h2>
       <ol>
         <li class="toc-li">
-          <a href={`#_top`} class="active">{post.data.title}</a>
+          <a href={`/astro/#_top`} class="active">{post.data.title}</a>
         </li>
         {headings.map((heading, i) => (
           <li class="toc-li" data-depth={heading.depth}>
-            <a href={`#${heading.slug}`}>{heading.text}</a>
+            <a href={`/astro/#${heading.slug}`}>{heading.text}</a>
           </li>
         ))}
       </ol>
@@ -89,7 +89,7 @@ const { Content, headings } = await render(post);
       </div>
       <Content />
       <hr class="end-of-article" />
-      <a href="/blog" class="block-link" data-pagefind-ignore>← Back to blog</a>
+      <a href="/astro/blog" class="block-link" data-pagefind-ignore>← Back to blog</a>
     </Card>
     {giscus && (
       <Card>

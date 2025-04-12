@@ -43,7 +43,7 @@ const { Content } = await render(project);
           const Tag = info.link ? 'a' : 'div';
           return (
             <li>
-              <Tag href={info.link} class='project-info-item'>
+              <Tag href={`/astro/{info.link}`} class='project-info-item'>
                 <Icon type={info.icon.type} name={info.icon.name as any} width={24} height={24} class='glow-icon' />
                 <span>{info.text}</span>
               </Tag>
@@ -68,7 +68,7 @@ const { Content } = await render(project);
       </div>
       <Content />
       <hr class="end-of-article" />
-      <a href="/projects" class="block-link" data-pagefind-ignore>← Back to projects</a>
+      <a href="/astro/projects" class="block-link" data-pagefind-ignore>← Back to projects</a>
     </Card>
   </article>
 </Layout>
